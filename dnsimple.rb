@@ -10,7 +10,7 @@ class Dnsimple < Formula
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/dnsimple/dnsimple-cli/releases/download/v0.3.0/dnsimple_0.3.0_darwin_amd64.tar.gz"
+      url "https://github.com/dnsimple/homebrew-tap/releases/download/v0.3.0/dnsimple_0.3.0_darwin_amd64.tar.gz"
       sha256 "7a3b85c33d5efed3fd56d009fe4f51bfc0019953cc91bc81bbb995629f3e8266"
 
       define_method(:install) do
@@ -18,7 +18,7 @@ class Dnsimple < Formula
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/dnsimple/dnsimple-cli/releases/download/v0.3.0/dnsimple_0.3.0_darwin_arm64.tar.gz"
+      url "https://github.com/dnsimple/homebrew-tap/releases/download/v0.3.0/dnsimple_0.3.0_darwin_arm64.tar.gz"
       sha256 "5360a576bb59930b83aa7ac2e359c81510002dde551ef98e7834d191f06c3a58"
 
       define_method(:install) do
@@ -29,14 +29,14 @@ class Dnsimple < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/dnsimple/dnsimple-cli/releases/download/v0.3.0/dnsimple_0.3.0_linux_amd64.tar.gz"
+      url "https://github.com/dnsimple/homebrew-tap/releases/download/v0.3.0/dnsimple_0.3.0_linux_amd64.tar.gz"
       sha256 "d6e9d79d020dbae3faebc5ee23e3b3aa4a605782c89218f6f6087ea11e94806e"
       define_method(:install) do
         bin.install "dnsimple"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/dnsimple/dnsimple-cli/releases/download/v0.3.0/dnsimple_0.3.0_linux_arm64.tar.gz"
+      url "https://github.com/dnsimple/homebrew-tap/releases/download/v0.3.0/dnsimple_0.3.0_linux_arm64.tar.gz"
       sha256 "0d00e73362bdcf09da171244ad44f382ef24cf250effbd8e8e235b50c82495d5"
       define_method(:install) do
         bin.install "dnsimple"

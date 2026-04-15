@@ -5,21 +5,21 @@
 class Dnsimple < Formula
   desc "DNSimple command-line tool."
   homepage "https://dnsimple.com"
-  version "0.5.1"
+  version "0.5.2"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/dnsimple/homebrew-tap/releases/download/v0.5.1/dnsimple_0.5.1_darwin_amd64.tar.gz"
-      sha256 "3795b08351ed7463d36b206fa239a3f6468951a031ba122c39a27f4fa786b95e"
+      url "https://github.com/dnsimple/homebrew-tap/releases/download/v0.5.2/dnsimple_0.5.2_darwin_amd64.tar.gz"
+      sha256 "a213b29066a2c1b16556e39102691e908fbf94826d4ac7daf42ce39a88d472bc"
 
       define_method(:install) do
         bin.install "dnsimple"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/dnsimple/homebrew-tap/releases/download/v0.5.1/dnsimple_0.5.1_darwin_arm64.tar.gz"
-      sha256 "fcbec9283422d12558a9d3360ce912f8a693c519b9f6040fb05297e034ce95a1"
+      url "https://github.com/dnsimple/homebrew-tap/releases/download/v0.5.2/dnsimple_0.5.2_darwin_arm64.tar.gz"
+      sha256 "0f202ae1f74185339f0bad11560f2adf78e54c1b51d0293ea48e5a3abf1614be"
 
       define_method(:install) do
         bin.install "dnsimple"
@@ -29,15 +29,15 @@ class Dnsimple < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/dnsimple/homebrew-tap/releases/download/v0.5.1/dnsimple_0.5.1_linux_amd64.tar.gz"
-      sha256 "794879ee36ae75846559296caf14268bd3b011ddeb6550051cd6cc3c588dca41"
+      url "https://github.com/dnsimple/homebrew-tap/releases/download/v0.5.2/dnsimple_0.5.2_linux_amd64.tar.gz"
+      sha256 "10cc1b83363c2ba983a7cac4b3d2e132c61ee1eb84efd898b550f5b95ceb8b2c"
       define_method(:install) do
         bin.install "dnsimple"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/dnsimple/homebrew-tap/releases/download/v0.5.1/dnsimple_0.5.1_linux_arm64.tar.gz"
-      sha256 "d7d0272f52ae96e81d0dcc149898938591cf99fec3aec0457b513355a30fb746"
+      url "https://github.com/dnsimple/homebrew-tap/releases/download/v0.5.2/dnsimple_0.5.2_linux_arm64.tar.gz"
+      sha256 "add0806370a5cebe9ffc0c68defc0a5dbad724d640770e2a8e03b893dc5e308e"
       define_method(:install) do
         bin.install "dnsimple"
       end

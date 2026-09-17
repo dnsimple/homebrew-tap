@@ -5,21 +5,21 @@
 class Dnsimple < Formula
   desc "DNSimple command-line tool."
   homepage "https://dnsimple.com"
-  version "0.11.0"
+  version "0.11.1"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/dnsimple/cli/releases/download/v0.11.0/dnsimple_0.11.0_darwin_amd64.tar.gz"
-      sha256 "1ea9050a7fe17b18c4f928722920f31fcdcd17a8378290f57d2ae9185e2ead3c"
+      url "https://github.com/dnsimple/cli/releases/download/v0.11.1/dnsimple_0.11.1_darwin_amd64.tar.gz"
+      sha256 "3d4b686c58e8b9c1761ececd016a09f6f6d5bc94c7aca413f7baa548f74fc5de"
 
       define_method(:install) do
         bin.install "dnsimple"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/dnsimple/cli/releases/download/v0.11.0/dnsimple_0.11.0_darwin_arm64.tar.gz"
-      sha256 "d4307bf77fceadcf10c59c51c58c75adc64effa7ddb8977ae20273dc0b843217"
+      url "https://github.com/dnsimple/cli/releases/download/v0.11.1/dnsimple_0.11.1_darwin_arm64.tar.gz"
+      sha256 "62800c46528067ce835fb270c87df8aa2b5de3a56f1f1b6a11fc4853e5cb5a2d"
 
       define_method(:install) do
         bin.install "dnsimple"
@@ -29,15 +29,15 @@ class Dnsimple < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/dnsimple/cli/releases/download/v0.11.0/dnsimple_0.11.0_linux_amd64.tar.gz"
-      sha256 "29b39d400b6a2932a1899a5fb2bafe01852397d989e06c7a26c4c5f7e9f1b79e"
+      url "https://github.com/dnsimple/cli/releases/download/v0.11.1/dnsimple_0.11.1_linux_amd64.tar.gz"
+      sha256 "a2038655587a29329adef8908a157d4f55bf8ccacb62ad56669805a50b7b3e12"
       define_method(:install) do
         bin.install "dnsimple"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/dnsimple/cli/releases/download/v0.11.0/dnsimple_0.11.0_linux_arm64.tar.gz"
-      sha256 "8f47c292059680bae59ab10ab797b0d3dca1344d8f568ecf43700fde200f2b91"
+      url "https://github.com/dnsimple/cli/releases/download/v0.11.1/dnsimple_0.11.1_linux_arm64.tar.gz"
+      sha256 "51f606c2832685ac73fde3aaf6a65098e7c8c8f59e351251dc9446a6351541a9"
       define_method(:install) do
         bin.install "dnsimple"
       end
